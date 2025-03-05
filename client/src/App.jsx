@@ -13,6 +13,7 @@ const App = () => {
 
   // fetch data function
   const fetchUsers = async () => {
+    console.log(getUsers);
     try {
       const response = await axios.get(getUsers);
       setUsers(response.data.reverse());
