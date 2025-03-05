@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;  
 
 // Connect to MongoDB
-connectDB();
+await connectDB();
 
 // Enable CORS for specific origin
 // app.use(cors({ 
