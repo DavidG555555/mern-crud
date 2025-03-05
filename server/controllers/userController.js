@@ -9,10 +9,9 @@ const userController = {
       res.json(users);
     } catch (error) {
       console.error('Error fetching users:', error);
-      res.status(500).json({ error: 'Error fetching users' });
+      res.status(500).json({ error });
     }
   },
-
 
   createUser: async (req, res) => {
     const { name, email, age } = req.body;
